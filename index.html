@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>全球云节点测速 · Ping 各大云服务厂商区域延迟</title>
+  <meta name="keywords" content="云厂商ping,云服务器延迟测试,阿里云延迟,腾讯云延迟,网络测速节点">
+  <meta name="description" content="一个 Ping 各大云服务厂商区域列表与网络延迟测试节点的工具网站。实时测速阿里云、腾讯云、七牛云、搬瓦工、Vultr、VirMach 全球节点延迟。">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <nav class="nav">
+    <span class="brand"><span class="dot"></span>全球云节点测速</span>
+    <span class="links">
+      <a class="active" href="./">首页</a>
+      <a href="aliyun/">阿里云</a>
+      <a href="tengxun/">腾讯云</a>
+      <a href="qiniu/">七牛云</a>
+      <a href="bandwagonhost/">搬瓦工</a>
+      <a href="vultr/">Vultr</a>
+      <a href="virmach/">VirMach</a>
+    </span>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="orbit">
+      <span style="left:8%;top:30%"></span>
+      <span style="left:20%;top:70%"></span>
+      <span style="left:35%;top:20%"></span>
+      <span style="left:50%;top:60%"></span>
+      <span style="left:62%;top:35%"></span>
+      <span style="left:75%;top:75%"></span>
+      <span style="left:85%;top:25%"></span>
+      <span style="left:92%;top:65%"></span>
+      <span style="left:45%;top:85%"></span>
+      <span style="left:15%;top:50%"></span>
+    </div>
+    <div class="wrap">
+      <span class="badge">● 实时浏览器探测 · 无需安装</span>
+      <h1>Ping 全球云节点<br>找到离你最近的云</h1>
+      <p class="sub">
+        一个面向云服务选购的网络延迟测试工具：覆盖主流云厂商的全球区域节点，
+        由你的浏览器实时发起探测，按延迟从低到高排序，帮你挑出最优选区。
+      </p>
+      <div class="cta">
+        <a class="btn btn-primary" href="aliyun/">开始测速 →</a>
+        <a class="btn btn-ghost" href="#providers">查看全部厂商</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>6</b><span>主流云厂商</span></div>
+        <div class="stat"><b>94</b><span>全球测速节点</span></div>
+        <div class="stat"><b>∞</b><span>免费实时探测</span></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 支持的厂商 -->
+  <section class="section" id="providers">
+    <div class="wrap">
+      <div class="heading">
+        <div class="eyebrow">Supported Providers</div>
+        <h2>支持的云厂商</h2>
+        <p>点击任意厂商，进入其实时节点延迟测速页。每个节点都会从你的网络环境实时 Ping。</p>
+      </div>
+      <div class="grid cols-3">
+        <a class="card pcard" href="aliyun/">
+          <img class="plogo" src="assets/img/logos/aliyun.png" alt="阿里云"/>
+          <h3>阿里云 Aliyun</h3>
+          <div class="pmeta">26 个区域节点 · OSS 全球加速</div>
+          <div class="pfoot"><span class="muted">查看延迟</span><span class="arrow">测速 →</span></div>
+        </a>
+        <a class="card pcard" href="tengxun/">
+          <img class="plogo" src="assets/img/logos/tengxun.png" alt="腾讯云"/>
+          <h3>腾讯云 Tencent</h3>
+          <div class="pmeta">19 个区域节点 · COS 对象存储</div>
+          <div class="pfoot"><span class="muted">查看延迟</span><span class="arrow">测速 →</span></div>
+        </a>
+        <a class="card pcard" href="qiniu/">
+          <img class="plogo" src="assets/img/logos/qiniu.ico" alt="七牛云"/>
+          <h3>七牛云 Qiniu</h3>
+          <div class="pmeta">4 个上传区域节点</div>
+          <div class="pfoot"><span class="muted">查看延迟</span><span class="arrow">测速 →</span></div>
+        </a>
+        <a class="card pcard" href="bandwagonhost/">
+          <img class="plogo" src="assets/img/logos/bandwagonhost.svg" alt="搬瓦工"/>
+          <h3>搬瓦工 Bandwagon</h3>
+          <div class="pmeta">9 个机房节点</div>
+          <div class="pfoot"><span class="muted">查看延迟</span><span class="arrow">测速 →</span></div>
+        </a>
+        <a class="card pcard" href="vultr/">
+          <img class="plogo" src="assets/img/logos/vultr.png" alt="Vultr"/>
+          <h3>Vultr</h3>
+          <div class="pmeta">24 个全球机房节点</div>
+          <div class="pfoot"><span class="muted">查看延迟</span><span class="arrow">测速 →</span></div>
+        </a>
+        <a class="card pcard" href="virmach/">
+          <img class="plogo" src="assets/img/logos/virmach.jpg" alt="VirMach"/>
+          <h3>VirMach</h3>
+          <div class="pmeta">12 个机房节点</div>
+          <div class="pfoot"><span class="muted">查看延迟</span><span class="arrow">测速 →</span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 工作原理 -->
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="heading">
+        <div class="eyebrow">How it works</div>
+        <h2>它是怎么工作的</h2>
+        <p>不依赖任何后端服务器，延迟数据 100% 来自你当前设备的真实网络环境。</p>
+      </div>
+      <div class="steps">
+        <div class="step"><div class="num">1</div><h4>选择厂商</h4><p>进入对应云厂商的测速页，页面已内置该厂商全部区域节点地址。</p></div>
+        <div class="step"><div class="num">2</div><h4>浏览器实时探测</h4><p>你的浏览器向每个节点并发发起请求，记录请求与响应之间的往返耗时（RTT）。</p></div>
+        <div class="step"><div class="num">3</div><h4>自动排序选优</h4><p>多轮采样后取稳定值，按延迟从低到高实时排序，★ 标记最快节点，供选购参考。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 特性 -->
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="heading">
+        <div class="eyebrow">Why us</div>
+        <h2>为什么用这个工具</h2>
+      </div>
+      <div class="grid cols-4">
+        <div class="card feat"><div class="fic">⚡</div><h3>并行测速</h3><p>全节点并发探测 + 超时控制，整轮秒级完成，告别串行卡顿。</p></div>
+        <div class="card feat"><div class="fic">🌐</div><h3>覆盖广泛</h3><p>从国内多区域到海外主流机房，94 个节点一键测速。</p></div>
+        <div class="card feat"><div class="fic">📡</div><h3>真实环境</h3><p>延迟来自你本机网络，比「他人测速结果」更贴合你的实际体验。</p></div>
+        <div class="card feat"><div class="fic">🆓</div><h3>免费即用</h3><p>纯前端实现，打开即用，无需注册登录。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="links">
+        <a href="https://api.inurl.link/" target="_blank" rel="noopener">API Token大全</a>
+        <a href="https://tools.inurl.link/" target="_blank" rel="noopener">工具箱</a>
+        <a href="https://ping.gaomeluo.com/" target="_blank" rel="noopener">云测速</a>
+        <a href="https://blog.gaomeluo.com/" target="_blank" rel="noopener">博客</a>
+        <a href="https://www.lixiaoxin.com" target="_blank" rel="noopener">关于</a>
+        <a href="https://inurl.link/dashboard" target="_blank" rel="noopener">短连接</a>
+      </div>
+      <div>© 全球云节点测速 · 浏览器实时探测，数据仅供参考，不构成选购承诺。</div>
+    </div>
+  </footer>
+
+  <script>
+    // 卡片光标跟随微光
+    document.querySelectorAll('.card').forEach(function (c) {
+      c.addEventListener('mousemove', function (e) {
+        var r = c.getBoundingClientRect();
+        c.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+        c.style.setProperty('--my', (e.clientY - r.top) + 'px');
+      });
+    });
+  </script>
+</body>
+</html>

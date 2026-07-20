@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>搬瓦工 Ping · 全球节点延迟测速 - BandwagonHost</title>
+  <meta name="keywords" content="搬瓦工ping,搬瓦工延迟,搬瓦工节点,搬瓦工区域测速">
+  <meta name="description" content="批量Ping测试搬瓦工全球各区域节点延迟，帮你挑选延迟最低的云服务器区域。">
+  <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
+  <link rel="stylesheet" href="../tanchuang/css/layui.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <nav class="nav">
+    <span class="brand"><span class="dot"></span>全球云节点测速</span>
+    <span class="links">
+        <a class="" href="../">首页</a>
+        <a class="" href="../aliyun/">阿里云</a>
+        <a class="" href="../tengxun/">腾讯云</a>
+        <a class="" href="../qiniu/">七牛云</a>
+        <a class="active" href="../bandwagonhost/">搬瓦工</a>
+        <a class="" href="../vultr/">Vultr</a>
+        <a class="" href="../virmach/">VirMach</a>
+    </span>
+  </nav>
+
+  <main class="wrap">
+    <div class="phead">
+      <img class="plogo" src="../assets/img/logos/bandwagonhost.svg" alt="搬瓦工"/>
+      <div>
+        <h1 class="ptitle">搬瓦工 全球节点延迟测速</h1>
+        <p class="psub">测试您本机到 搬瓦工（BandwagonHost）各区域节点的网络延迟，实时排序，越小越好。</p>
+      </div>
+      <span class="spacer"></span>
+      <span id="status" class="status-pill"><span class="led"></span>准备中</span>
+      <button id="toggle" class="toggle">▶ 开始测速</button>
+    </div>
+
+    
+<section class="promos">
+  <div class="promos-head"><span class="ph-line"></span>优惠活动 · 选购云服务器可领<span class="ph-line"></span></div>
+  <div class="promo-grid">
+    <a class="promo-card ali" href="https://inurl.link/aliyunxiaozhan" target="_blank" rel="nofollow">
+      <span class="promo-tag">阿里云</span>
+      <div class="promo-title">2000 元代金券</div>
+      <div class="promo-desc">新用户专享，云服务器低至 1 折起</div>
+      <span class="promo-cta">立即领取 →</span>
+    </a>
+    <a class="promo-card tx" href="https://inurl.link/txmiaosha" target="_blank" rel="nofollow">
+      <span class="promo-tag">腾讯云</span>
+      <div class="promo-title">限时秒杀</div>
+      <div class="promo-desc">2 核 2G 轻量应用服务器特价抢购</div>
+      <span class="promo-cta">立即抢购 →</span>
+    </a>
+    <a class="promo-card vultr" href="https://inurl.link/vultr" target="_blank" rel="nofollow">
+      <span class="promo-tag">Vultr</span>
+      <div class="promo-title">可能是最便宜的国外 VPS</div>
+      <div class="promo-desc">最便宜的 VPS 低至 12＄/年</div>
+      <span class="promo-cta">立即查看 →</span>
+    </a>
+    <a class="promo-card bwh" href="https://inurl.link/bandwagonhost" target="_blank" rel="nofollow">
+      <span class="promo-tag">搬瓦工</span>
+      <div class="promo-title">可能是国内用户最多的国外 VPS</div>
+      <div class="promo-desc">速度快，拥有国内 3 大电信的线路</div>
+      <span class="promo-cta">立即查看 →</span>
+    </a>
+  </div>
+</section>
+
+
+    <div class="hint-bar">
+      <span class="hb-dot"></span>
+      <span class="hb-note">提示：受网络波动影响，建议多等几轮取稳定值；长时间无数据可点击「停止测速」后重新开始。</span>
+      <span class="hb-sep" aria-hidden="true"></span>
+      <span class="hb-tag">重要提醒</span>
+      <span class="hb-text">有的网站你打不开，可能需要一个节点多、非常便宜、稳定的机场：</span>
+      <a class="hb-link" href="https://inurl.top/archives/mojie/" target="_blank" rel="nofollow">传送门 →</a>
+    </div>
+
+    <div class="table-card">
+      <div class="tcap"><span><b>9</b> 个节点 · 并行实时测速</span><span>延迟越低越优 ★</span></div>
+      <table class="results">
+        <thead>
+          <tr><th>区域</th><th>节点地址</th><th>延迟</th></tr>
+        </thead>
+        <tbody id="result-body">
+          <tr><td colspan="3">初始化中…</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="about">
+      <h2>这是什么原理？</h2>
+          <p>您的浏览器向搬瓦工全球各区域内的实例发出HTTP请求。显示请求和响应之间的中间时间。</p>
+          <p>受多种因素干扰，建议多刷新几次为准。</p>
+		  <p>为选择购买区域区域提供参考。</p>
+<p>
+<center>
+本站由<a rel="nofollow" href="https://inurl.link/aliyunxiaozhan" target="_blank">阿里云服务器ECS</a>驱动，如需购买，可领取一个<a rel="nofollow" href="https://inurl.link/aliyunxiaozhan" target="_blank">阿里云限量红包</a>
+</center>
+<center>
+<iframe src="https://inurl.link/aliyunxiaozhan" style="width:0px;height:0px;"></iframe>
+<iframe src="https://inurl.link/txmiaosha" style="width:0px;height:0px;"></iframe>
+</p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="links">
+        <a href="https://api.inurl.link/" target="_blank" rel="noopener">API Token大全</a>
+        <a href="https://tools.inurl.link/" target="_blank" rel="noopener">工具箱</a>
+        <a href="https://ping.gaomeluo.com/" target="_blank" rel="noopener">云测速</a>
+        <a href="https://blog.gaomeluo.com/" target="_blank" rel="noopener">博客</a>
+        <a href="https://www.lixiaoxin.com" target="_blank" rel="noopener">关于</a>
+        <a href="https://inurl.link/dashboard" target="_blank" rel="noopener">短连接</a>
+      </div>
+      <div>© 全球云节点测速 · 数据由你的浏览器实时探测，仅供参考。</div>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/descs.js"></script>
+  <script src="../assets/js/ping.js"></script>
+  <script src="../tanchuang/layui.js"></script>
+</body>
+</html>
